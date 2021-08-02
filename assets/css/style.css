@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+body {
+    font-family: Myriad Pro;
+    color: #5e524d;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+}
+/* -------------- header */ 
+#header {
+    width: 1170px;
+    margin: 0 auto;
+    height: 140px;
+}
+
+.header__top .language ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language ul li a {
+    padding: 0 10px;
+    border-right: 1px solid ;
+    color: #5e524d;
+    font-size: 12px;
+}
+
+.language ul li:last-child a {
+    border-right: none;
+}
+
+/* --------header bottom */
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    color: #5e524d;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 35px;
+}
+
+.nav-menu li a:hover {
+    color: #83a92c;
+}
+
+.nav-menu li:last-child a {
+    padding-right: 0;
+}
+
+/* ----------- banner ----------- */
+#banner {
+    position: relative;
+}
+
+.banner__image img {
+    width: 100%;
+    display: block;
+}
+
+.banner__text {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 540px;
+}
+
+.banner__text-title {
+    font-size: 79px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.banner__text-desc {
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.banner__contentImage .board {
+    position: absolute;
+    bottom: -25px;
+    right: 130px;
+    z-index: 1;
+}
+
+.banner__contentImage .lemon {
+    position: absolute;
+    bottom: 10px;
+    right: 450px;
+    z-index: 3;
+}
+
+.banner__contentImage .jar {
+    position: absolute;
+    bottom: 10px;
+    right: 250px;
+    z-index: 2;
+}
+
+.banner__text-button button {
+    color: #fff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 172px;
+}
+
+.banner__text-button button:hover {
+    cursor: pointer;
+}
+
+.btn__readMore {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+.btn__buyNow {
+    background-color: #f18a77;
+    border: 1px solid #f18a77;
+}
+
+.chevron i{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.chevron i:first-child {
+    left: 150px;
+}
+
+.chevron i:last-child {
+    right: 150px;
+}
+
+/* ------------ welcome */
+#welcome {
+    background-image: url(../images/bg.png);
+    padding: 100px 0;
+}
+
+.welcome__logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.welcome__description {
+    text-align: center; 
+    width: 65%;
+    margin: 50px auto;
+
+}
+
+.welcome__description p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.welcome__button {
+    text-align: center;
+}
+
+.welcome__button button:hover {
+    cursor: pointer;
+}
+
+.btn__ourProduct {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #f18a77;
+    text-transform: uppercase;
+    border: 1px solid #f18a77;
+    margin-right: 10px;
+}
+
+.btn__moreAbout {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 25px;
+    color: #83a92c;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid #83a92c;
+}
+
+/* --------feature */
+
+#feature {
+    background-image: url(../images/feature/bg-feature.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+
+.feature__text {
+    margin-bottom: 50px;
+}
+
+.feature__text h2 {
+    margin-bottom: 30px;
+}
+
+.feature__text p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.feature__product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.feature__product-item {
+    width: 25%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.feature__product-item .product__image {
+    margin-bottom: 30px;
+}
+
+.feature__product-item .product__image img {
+    height: 240px;
+}
+
+.feature__product-item h4 {
+    font-size: 18px;
+}
+
+.feature__btn {
+    text-align: center;
+}
+
+.feature__btn button {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #f18a77;
+    text-transform: uppercase;
+    border: 1px solid #f18a77;
+}
+
+.feature__btn button:hover {
+    cursor: pointer;
+}
+
+/* ---------health news */
+#news {
+    background-image: url(../images/bg.png);
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.news__image img {
+    position: absolute;
+    top: -110px;
+    right: 50px;
+    z-index: 10;
+}
+
+#news h2 {
+    margin-bottom: 50px;
+}
+
+.news__health {
+    display: flex;
+    position: relative;
+    z-index: 11;
+    justify-content: space-evenly;
+}
+
+.news__health-item {
+    margin: 0 15px;
+    width: 33.33%;
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+.news__health-item h3 a {
+    color: #5e524d;
+    font-size: 18px;
+}
+
+.news__health-item span {
+    font-size: 14px;
+    opacity: 0.5;
+    display: block;
+    margin: 5px 0;
+}
+
+.news__health-item p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 10px 0;
+    text-align: justify; 
+    line-height: 1.5;
+}
+
+.news__health-item .btn-readMore {
+    color: #83a92c;
+}
+
+/* ----------contact form ---------- */
+#contact {
+    color: #fff;
+    background: linear-gradient(to top, rgba(131, 169, 44, 0.85), rgba(131, 169, 44, 0.85)), url(../images/bg-contact.png);
+    padding: 70px 0;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 50px auto 0;
+}
+
+.contact__info span {
+    display: block;
+    font-size: 18px;
+}
+
+.contact__info>p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact__info p a {
+    color: #fff;
+}
+
+.contact__info-social {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contact__info-social a {
+    color: #fff;
+}
+
+.contact__info-social .social__fb i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3a589b;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.contact__info-social .social__yt i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #cf3427;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.contact__info-social p {
+    display: inline-block; 
+}
+
+.contact__form {
+    margin-left: 150px;
+}
+
+.contact__form label {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.contact__form input:not([type="submit"]) {
+    padding: 8px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.contact__form input[type="submit"] {
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: #5e524d;
+    color: #fff;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: 10px;
+    border: none;
+}
+
+.contact__form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.contact__form textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px 15px;
+    outline: none;
+}
+
+/* ----------------footer ----------------*/
+#footer {
+    padding: 40px 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #000;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.footer__menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__menu ul li a {
+    color: #000;
+    opacity: 0.7;
+    font-size: 14px;
+    padding: 0 5px;
+    border-right: 1px solid #000;
+    text-decoration: underline;
+}
+
+.footer__menu ul li:last-child a {
+    border-right: none;
+}
