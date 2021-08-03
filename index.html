@@ -14,28 +14,37 @@
     <div id="wrapper">
         <!-- header -->
         <div id="header">
-            <div class="header__top">
-                <div class="language">
-                    <ul>
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Tiếng Việt</a></li>
-                        <li><a href="#">中国</a></li>
-                    </ul>
+            <div class="container">
+                <div class="header__top">
+                    <div class="language">
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Tiếng Việt</a></li>
+                            <li><a href="#">中国</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="header__bottom">
-                <div class="header__bottom-logo">
-                    <img src="./assets/images/logo.png" alt="">
-                </div>
-                <div class="header__bottom-menu">
-                    <ul class="nav-menu">
-                        <li><a href="#">About Mon’s Farm</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Health News</a></li>
-                        <li><a href="#">Promotion</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
+                <div class="header__bottom">
+                    <div class="header__bottom-logo">
+                        <a href="./">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__bottom-menu">
+                        <ul class="nav-menu">
+                            <li><a href="#">About Mon’s Farm</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Health News</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                        <div class="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,27 +118,27 @@
                     </div>
                     <div class="feature__product">
                         <div class="feature__product-item">
-                            <div class="product__image">
-                                <img src="./assets/images/feature/jar.png" alt="">
-                            </div>
+                            <!-- <div class="product__image">
+                            </div> -->
+                            <img src="./assets/images/feature/jar.png" alt="">
                             <h4>Honey Red Lime</h4>
                         </div>
                         <div class="feature__product-item">
-                            <div class="product__image">
-                                <img src="./assets/images/feature/mat-ong.png" alt="">
-                            </div>
+                            <!-- <div class="product__image">
+                            </div> -->
+                            <img src="./assets/images/feature/mat-ong.png" alt="">
                             <h4>Lam Dong Honey</h4>
                         </div>
                         <div class="feature__product-item">
-                            <div class="product__image">
-                                <img src="./assets/images/feature/sugar.png" alt="">
-                            </div>
+                            <!-- <div class="product__image">
+                            </div> -->
+                            <img src="./assets/images/feature/sugar.png" alt="">
                             <h4>Quang Ngai Sugar</h4>
                         </div>
                         <div class="feature__product-item">
-                            <div class="product__image">
-                                <img src="./assets/images/feature/nuoc-mam.png" alt="">
-                            </div>
+                            <!-- <div class="product__image">
+                            </div> -->
+                            <img src="./assets/images/feature/nuoc-mam.png" alt="">
                             <h4>Nuoc Mam Phu Quoc</h4>
                         </div>
                     </div>
@@ -148,8 +157,10 @@
                     <h2 class="section__title">Health News</h2>
                     <div class="news__health">
                         <div class="news__health-item">
-                            <h3><a href="#">Lợi ích chữa bệnh và giảm cân của quả chanh đào</a></h3>
-                            <span>vov.vn</span>
+                            <div class="news__title">
+                                <h3><a href="#">Lợi ích chữa bệnh và giảm cân của quả chanh đào</a></h3>
+                                <span>vov.vn</span>
+                            </div>
                             <img src="./assets/images/news/chanh-dao.png" alt="">
                             <p>Việt Nam có khoảng 20 loài chanh khác nhau, trong đó giống chanh đào là một “thần dược”
                                 rất
@@ -162,8 +173,10 @@
                             <a href="#" class="btn-readMore">Read more</a>
                         </div>
                         <div class="news__health-item">
-                            <h3><a href="#">Công dụng của chanh đào mật ong</a></h3>
-                            <span>webtretho.com</span>
+                            <div class="news__title">
+                                <h3><a href="#">Công dụng của chanh đào mật ong</a></h3>
+                                <span>webtretho.com</span>
+                            </div>
                             <img src="./assets/images/news/chanh-dao-mat-ong.png" alt="">
                             <p>
                                 Công dụng của chanh đào là gì, Thời tiết giao mùa, các mẹ và các bé rất dễ bị ho, cảm
@@ -177,8 +190,10 @@
                             <a href="#" class="btn-readMore">Read more</a>
                         </div>
                         <div class="news__health-item">
-                            <h3><a href="#">10 tác dụng của mật ong mà bạn nên biết</a></h3>
-                            <span>baophunuonline.net</span>
+                            <div class="news__title">
+                                <h3><a href="#">10 tác dụng của mật ong mà bạn nên biết</a></h3>
+                                <span>baophunuonline.net</span>
+                            </div>
                             <img src="./assets/images/news/mat-ong.png" alt="">
                             <p>
                                 Với những công dụng tuyệt vời của mật ong đối với sức khỏe, làm đẹp ... tác dụng của mật
@@ -260,6 +275,16 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var navMenu = document.querySelector(".nav-menu");
+        var mobileMenu = document.querySelector(".mobile-menu");
+
+        mobileMenu.addEventListener("click", function() {
+            navMenu.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        })
+    </script>
 </body>
 
 </html>
